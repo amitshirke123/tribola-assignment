@@ -1,0 +1,89 @@
+<div class="content {{appliedTheme}}" role="main">
+  <div class="theme-options">
+    <button [ngClass]="(appliedTheme === 'theme-dark')? 'active' : ''" (click)="setTheme('theme-dark')">Dark</button>
+    <button [ngClass]="(appliedTheme === 'theme-light')? 'active' : ''" (click)="setTheme('theme-light')">Light</button>
+    <button [ngClass]="(appliedTheme === 'theme-contrast')? 'active' : ''" (click)="setTheme('theme-contrast')">Contrast</button>
+  </div>
+
+  <div class="container">
+      <h2>Registration</h2>
+       <!--First name-->
+      <div class="box">
+        <div class="iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <div class="fr">
+            <input type="text" name="firstName" placeholder="First Name"
+            class="textBox" autofocus="on" required>
+        </div>
+        <div class="clr"></div>
+      </div>
+       <!--First name-->
+
+       <!--Second name-->
+       <div class="box">
+        <div class="iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+        <div class="fr">
+            <input type="text" required name="secondName"
+            placeholder="Last Name" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--Second name-->
+
+
+      <!---Phone No.------>
+      <div class="box">
+        <div class="iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+        <div class="fr">
+            <input type="text" required name="phoneNo" maxlength="10" placeholder="Phone No." class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Phone No.---->
+
+
+      <!---Email ID---->
+      <div class="box">
+        <div class="iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+        <div class="fr">
+            <input type="email" required name="email" placeholder="Email Id" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--Email ID----->
+
+
+      <!---Password------>
+      <div class="box">
+        <div class="iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+        <div class="fr">
+            <input type="Password" required name="password" placeholder="Password" class="textBox">
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!---Password---->
+
+      <!---Gender----->
+      <div class="box radio">
+        <label for="gender" class="fontLabel"> Gender: </label>
+          <input type="radio" name="Gender" value="Male" required> Male &nbsp; &nbsp; &nbsp; &nbsp;
+          <input type="radio" name="Gender" value="Female" required> Female
+      </div>
+      <!---Gender--->
+
+
+      <!--Terms and Conditions------>
+      <div class="box terms">
+          <input type="checkbox" name="Terms" required> &nbsp; I accept the terms and conditions
+      </div>
+      <!--Terms and Conditions------>
+
+
+
+      <!---Submit Button------>
+      <div class="box" style="background: #2d3e3f">
+          <input type="Submit" name="Submit" class="submit" value="SUBMIT">
+      </div>
+      <!---Submit Button----->
+      
+  </div>
+</div>
